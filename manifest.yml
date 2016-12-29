@@ -1,0 +1,6 @@
+---
+applications:
+- name: sh44794-bzvz-app
+  memory: 1G
+  random-route: true
+  path: build/libs/spring-music.jar
