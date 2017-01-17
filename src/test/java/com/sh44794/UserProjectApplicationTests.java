@@ -1,4 +1,4 @@
-package com.vo44480;
+package com.sh44794;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

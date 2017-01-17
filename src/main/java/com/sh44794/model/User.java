@@ -1,5 +1,4 @@
-package com.vo44480.model;
-import javax.persistence.Column;
+package com.sh44794.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,23 +6,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-//@Table(name="IME_TABLICE_U_BAZI")
+@Table(name="T_USER")
 public class User {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO) 
-//	@Column(name="IME_KOLON_U_BAZI")
-	private Long id;
-	
-//	@Column(unique = true, nullable = false, name="IME_KOLONE_U_BAZI")
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long id;	
 	private String username;
-	
-//	@Column(name="IME_KOLONE_U_BAZI")
-	private String firstName;
-	
+	private String firstName;	
 	private String lastName;
-	
-	private Integer numOfDogs;
 
 	public Long getId() {
 		return id;
@@ -55,14 +46,6 @@ public class User {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
-	}
-
-	public Integer getNumOfDogs() {
-		return numOfDogs;
-	}
-
-	public void setNumOfDogs(Integer numOfDogs) {
-		this.numOfDogs = numOfDogs;
 	}
 	
 	

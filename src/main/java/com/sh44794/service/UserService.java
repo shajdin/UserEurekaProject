@@ -1,12 +1,14 @@
-package com.vo44480.service;
+package com.sh44794.service;
 
 import java.util.List;
 
-import com.vo44480.model.User;
+import com.sh44794.model.User;
 
 public interface UserService {
 	
-	User findById(long id);
+	User findById(Long id);
+	
+	List<User> getAll();
 	
 	List<User> findByFirstNameLike(String firstName);
 	User findByFirstName(String firstName);

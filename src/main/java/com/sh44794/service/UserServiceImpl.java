@@ -1,21 +1,24 @@
-package com.vo44480.service;
+package com.sh44794.service;
 
 import java.util.List;
+
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vo44480.model.User;
-import com.vo44480.repository.UserRepository;
+import com.sh44794.model.User;
+import com.sh44794.repository.UserRepository;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService{
 	
 	@Autowired
 	private UserRepository userRepository;
 
 	@Override
-	public User findById(long id) {
+	public User findById(Long id) {
 		return userRepository.findOne(id);
 	}
 
@@ -47,6 +50,11 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public User saveUser(User user) {
 		return userRepository.save(user);
+	}
+
+	@Override
+	public List<User> getAll() {
+		return userRepository.findAll();
 	}
 
 }

@@ -1,10 +1,10 @@
-package com.vo44480.repository;
+package com.sh44794.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.vo44480.model.User;
+import com.sh44794.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	
